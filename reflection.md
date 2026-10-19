@@ -7,7 +7,11 @@
 - Briefly describe your initial UML design.
 - What classes did you include, and what responsibilities did you assign to each?
 
-**b. Design changes**
+1. Add and manage multiple pets.
+2. Add care tasks such as walks, feeding, medication, and grooming.
+3. View an organized schedule of pet-care tasks, including conflicts and recurring tasks.
+
+4. **b. Design changes**
 
 - Did your design change during implementation?
 - If yes, describe at least one change and why you made it.
