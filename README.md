@@ -76,26 +76,39 @@ Sample test output:
 ```
 # Paste your pytest output here
 ```
+rootdir: C:\Users\giang\Codepath\ai110-module2show-pawpal-starter        
+plugins: anyio-4.15.1
+collected 7 items                                                       
 
+tests\test_pawpal.py .......                                      [100%] 
+
+========================== 7 passed in 0.04s =========================== 
 ## 📐 Smarter Scheduling
 
 > Fill in once you've implemented scheduling logic.
+## Smarter Scheduling
 
-| Feature | Method(s) | Notes |
-|---------|-----------|-------|
-| Task sorting | | e.g., by priority, duration |
-| Filtering | | e.g., skip tasks if time runs out |
-| Conflict handling | | e.g., overlapping time slots |
-| Recurring tasks | | e.g., daily vs. weekly |
+| Feature | Method | Behavior |
+|---|---|---|
+| Sorting | `Scheduler.sort_by_time()` | Sorts all pets' tasks by HH:MM time |
+| Filtering | `Scheduler.filter_tasks()` | Filters by pet or completion status |
+| Recurrence | `Scheduler.mark_task_complete()` | Creates the next daily or weekly occurrence |
+| Conflict detection | `Scheduler.find_conflicts()` | Detects tasks scheduled for the same date and time |
 
 ## 📸 Demo Walkthrough
 
 Describe your app in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. The user starts PawPal+ and enters their pet information.
+2. The user adds Mochi, a dog, and Luna, a cat.
+3. The user schedules tasks such as feeding, medication, and walks.
+4. PawPal+ retrieves tasks for all pets through the Owner object.
+5. The Scheduler sorts tasks chronologically.
+6. Daily or weekly tasks automatically create their next occurrence after completion.
+7. Tasks scheduled for the same date and time are identified as conflicts.
+8. The same scheduling behavior can be verified with the CLI demo by running:
+
+```bash
+python main.py
 
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or link to a demo video here -->
